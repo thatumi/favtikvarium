@@ -13,3 +13,9 @@ Kedvencekből törlés: A könyv oldalán a cím mellett megjelenő "mínusz csi
 
 A kiegészítő a chrome.storage API-t használja, ami azt jelenti, hogyha a felhasználó be van lépve a böngészőbe és elérhető, akkor a felhőbe fogja tárolni a kedvenceink listáját.
 Használva vannak továbbá a jQuery és DataTables könyvtárak is.
+
+## Képernyőfotók
+
+![könyvOldal](https://github.com/thatumi/favtikvarium/assets/49487499/6598c167-7125-4ac7-9b57-4da57a0a3fab)
+![kedvenceimOldal](https://github.com/thatumi/favtikvarium/assets/49487499/b53011db-000e-4c04-ba72-de81ca43733d)
+![böngészőSáv](https://github.com/thatumi/favtikvarium/assets/49487499/d2609e50-7926-44ed-a0a2-562a570dbff3)
