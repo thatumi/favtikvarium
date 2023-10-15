@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <title>Kedvenc könyveim</title>
+    <script src="jquery.min.js"></script>
+    <script src="jquery.dataTables.min.js"></script>
+    <script src="content.js"></script>
+    <link rel="stylesheet" href="jquery.dataTables.min.css">
+    <link rel="stylesheet" href="https://www.antikvarium.hu/node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link href="https://www.antikvarium.hu/dist/assets/css/themes/theme01/css/default-5ed04713bb.css" rel="stylesheet">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5">
+    <style>
+        body {
+            min-width: 340px;
+        }
+
+        #kedvenceimTabla_length {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body id="AntikvariumBody" itemscope="" class="eupopup eupopup-bottom cbp-spmenu-push"
+      style="background-image: url(https://cdn.antikvarium.hu/site/antik/home/ant_weboldal_hatter_fin.jpg);
+      background-position: center;background-repeat: no-repeat;background-attachment: fixed;background-size:cover;">
+<header id="headerFrame" class="container"></header>
+<section id="contentFrame" class="container container-antik" style="max-width: 1120px;">
+    <div class="margin-top-10"></div>
+    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br>
+        <div class="panel panel-default panel-antik">
+            <div class="panel-heading clickingHandStyle" data-bs-toggle="collapse" href="#ertDetails"><a
+                    class="panel-title">Kedvencek</a></div>
+            <div class="panel-title-arrow"></div>
+            <div id="ertDetails" class="panel-collapse collapse">
+                <div class="panel-body terkoz sorkizart">
+                </div>
+            </div>
+        </div>
+        <br>
+        <div id="elojegyzesTabla_wrapper" class="dataTables_wrapper no-footer">
+            <table id="kedvenceimTabla" class="display dataTable bookingListTable no-footer"
+                   role="grid">
+                <thead>
+                <tr role="row">
+                    <th class="bookingListTableHeadDelete sorting" tabindex="0" aria-controls="elojegyzesTabla"
+                        rowspan="1" colspan="1" style="width: 15px;">
+                        <span class="hidden-xxs hidden-xs">Törlés</span>
+                        <span class="d-block d-sm-none hoverOnTouch" title="Törlésre jelölve">T.</span>
+                    </th>
+
+                    <th class="sorting" aria-sort="ascending" tabindex="0" aria-controls="elojegyzesTabla" rowspan="1"
+                        colspan="1"
+                        style="width: 100px;">Cím
+                    </th>
+
+                    <th class="hidden-xxs hidden-xs hidden-sm sorting" tabindex="0" aria-controls="elojegyzesTabla"
+                        rowspan="1" colspan="1" style="width: 60px;">Szerző
+                    </th>
+
+                    <th class="bookingListTableHeadDateOfPublication hidden-xxs hidden-xs hidden-sm sorting"
+                        tabindex="0" aria-controls="elojegyzesTabla" rowspan="1" colspan="1" style="width: 70px;">Kiadás
+                        éve
+                    </th>
+
+                    <th class="hidden-xxs hidden-xs hidden-sm bookingListTableHeadInformMethod sorting" tabindex="0"
+                        aria-controls="elojegyzesTabla" rowspan="1" colspan="1" style="width: 131px;">Kiadó
+                    </th>
+                </tr>
+                </thead>
+                <tbody id="favTable"></tbody>
+            </table>
+        </div>
+        <br>
+        <a id="kedvenceimTorleseButton" class="clickingHandStyle btn btn-default btn-sm">
+            Kijelöltek törlése
+        </a>
+    </div>
+    <br>
+</section>
+</body>
+</html>

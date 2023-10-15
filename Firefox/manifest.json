@@ -1,0 +1,38 @@
+{
+  "manifest_version": 2,
+  "version": "1.0",
+  "name": "Favtikvarium",
+  "description": "Könyveket menthetsz le későbbi vásárlásra az antikvarium.hu-ról.",
+  "content_scripts": [
+    {
+      "matches": [
+        "*://*.antikvarium.hu/*"
+      ],
+      "js": [
+        "content.js",
+        "jquery.min.js",
+        "jquery.dataTables.min.js"
+      ]
+    }
+  ],
+  "browser_action": {
+    "default_icon": "res/images/star-fav.png",
+    "default_popup": "kedvenceim.html",
+    "browser_style": true
+  },
+  "web_accessible_resources": [
+    "res/images/star-plus-30.png",
+    "res/images/star-minus-30.png",
+    "kedvenceim.html"
+  ],
+  "permissions": [
+    "storage",
+    "tabs"
+  ],
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "{5791d1c1-18f8-4b93-9085-2970e424d92d}"
+    }
+  }
+}
+
